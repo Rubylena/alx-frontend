@@ -668,7 +668,11 @@
       color: var(--color-primary);
   }
 
-.card-testimonial .card-quote {
+  .card-testimonial .card-quote {
+    position: relative;
+}
+
+.card-testimonial .card-quote::before {
     content: "\201C";
     position: absolute;
     top: -4.5rem;
@@ -676,10 +680,6 @@
     color: #efeded;
     font-size: 10rem;
     z-index: -1;
-}
-
-.card-testimonial .card-quote::before {
-    position: relative;
 }
 
 .section-hero {
